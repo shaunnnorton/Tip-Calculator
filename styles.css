@@ -15,6 +15,7 @@ main{
     border:solid black 1px;
     padding:1em;
     border-radius: 2em;
+    background-color: orange;
 }
 main div{
     padding-bottom: 0.25em;
@@ -31,6 +32,7 @@ main input{
     padding:1em;
     margin-left: 0;
     margin-right: 0;
+    
 }
 main form{
     display: flex;
