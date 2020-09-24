@@ -17,19 +17,20 @@
             <label for="input">Bill</label>
             <div class="inputs">
                 <button  type='button' class='button' data-change="1" data-value="bill">+</button>
-                <input id="bill" value="10.00" type="number">
+                <input id="bill" value="10.00" type="text" pattern="($)(?=.*\d)">
                 <button  type='button' class="button" data-change="-1" data-value="bill">-</button>
             </div>
             <label for="tip">Tip%</label>
             <div class="inputs">
                 <button  type='button' class='button' data-change="1" data-value="tip">+</button>
-                <input type="number" id="tip" value='15' >
+                <input type="text" id="tip" value='15' pattern="(?=.*\d)(%)">
+                
                 <button type='button' class="button" data-change="-1" data-value="tip">-</button>
             </div>
             <label for="people">People</label>
             <div class="inputs">
                 <button  type='button' class='button' data-change="1" data-value="people">+</button>
-                <input type="number" id="people" value="1">
+                <input type="text" id="people" value="1" pattern="(?=.*\d)">
                 <button  type='button' class="button" data-change="-1" data-value="people">-</button>
             </div>
         </form>
