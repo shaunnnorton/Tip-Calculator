@@ -16,15 +16,12 @@ function calculateTip() {
 }
 function changeValue(value,toChange){
     if(toChange == 'bill'){
-        //console.log(value)
         billInput.value = parseFloat(format_value('remove',billInput,""))+parseFloat(value)
     }
     if(toChange == 'tip'){
-        //console.log(value)
         tipInput.value = parseFloat(tipInput.value)+parseFloat(value)
     }
     if(toChange == 'people'){
-        //console.log(value)
         peopleInput.value = parseFloat(peopleInput.value)+parseFloat(value)
     }
     calculateTip()
@@ -46,7 +43,6 @@ function format_value(perform,item,symbol){
         for(let i = 0;i<item.value.length;i++){
             if(symbol.includes(item.value[i])){
                 item.value = item.value.replace(symbol,'') 
-                //console.log(item.value)
             }
         }
         if(symbol == '%'){item.value = `${item.value}${symbol}`}

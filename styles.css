@@ -12,7 +12,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:solid black 1px;
+    border:dashed black 1px;
     padding:1em;
     border-radius: 2em;
     background-color: orange;
@@ -48,24 +48,39 @@ main form{
     display: flex;
     flex-direction: row;
     height: 40px;
+    border: black outset 5px;
+    padding: 0;
     
 }
 button{
     margin: 0;
     height: 40px;
-    border: none;
+    font-weight: 900;
+    font-size: large;
 }
 
-main form div span{
-    display: flex;
-    flex-direction: row;
-    height: 40px;
+.headtings{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.subtings{
+    font-weight: 1;
+    font-size:large;
+}
+
+#display{
+    border-top: 3px dashed black;
+    margin-top: 10px;
+    padding:0;
+    border-bottom: 3px dashed black;
+    margin-bottom: 10px;
+    
     
 }
-main form div span div{
-    padding: 0;
-    margin: 0;
-    background: rgb(255, 255, 255);
-    border: none;
-    height: 40px;
+
+main h1{
+    font-style: italic;
+    border: black inset 5px;
+    padding-right: 8px;
 }

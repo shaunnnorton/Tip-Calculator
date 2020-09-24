@@ -8,35 +8,35 @@
 </head>
 <body>
     <main>
-        <h1>Tip Calc</h1>
-        <div id="display">
-            <span>Tip Amount</span>
-            <span id="tip_amount">0.00</span>
-        </div>
+        <h1>Tip Calculator</h1>
+        
         <form >
             <label for="input">Bill</label>
             <div class="inputs">
-                <button  type='button' class='button' data-change="1" data-value="bill">+</button>
+                <button  type='button' class='button' data-change="-1" data-value="bill">-</button>
                 <input id="bill" value="10.00" type="text" pattern="($)(?=.*\d)">
-                <button  type='button' class="button" data-change="-1" data-value="bill">-</button>
+                <button  type='button' class="button" data-change="1" data-value="bill">+</button>
             </div>
             <label for="tip">Tip%</label>
             <div class="inputs">
-                <button  type='button' class='button' data-change="1" data-value="tip">+</button>
+                <button  type='button' class='button' data-change="+1" data-value="tip">-</button>
                 <input type="text" id="tip" value='15' pattern="(?=.*\d)(%)">
                 
-                <button type='button' class="button" data-change="-1" data-value="tip">-</button>
+                <button type='button' class="button" data-change="1" data-value="tip">+</button>
             </div>
             <label for="people">People</label>
             <div class="inputs">
-                <button  type='button' class='button' data-change="1" data-value="people">+</button>
+                <button  type='button' class='button' data-change="-1" data-value="people">-</button>
                 <input type="text" id="people" value="1" pattern="(?=.*\d)">
-                <button  type='button' class="button" data-change="-1" data-value="people">-</button>
+                <button  type='button' class="button" data-change="1" data-value="people">+</button>
             </div>
         </form>
-        <div>
-            <span>Total</span>
-            <span id='total'>0.00</span>
+        <div id="display">
+            <span class="headtings">Tip Amount:</span>
+            <span id="tip_amount" class="subtings">0.00</span>
+        
+            <span class="headtings">Total:</span>
+            <span id='total' class="subtings">0.00</span>
         </div>
     </main>
     <script src='script.js'></script>
